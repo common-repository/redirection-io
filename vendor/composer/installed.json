@@ -1,0 +1,109 @@
+[
+    {
+        "name": "psr/log",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+            "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2018-11-20T15:27:04+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "redirectionio/proxy-sdk",
+        "version": "v0.3.0",
+        "version_normalized": "0.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/redirectionio/proxy-sdk-php.git",
+            "reference": "1c37a03b1548cc581e82d7e6e060aff28e475358"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/redirectionio/proxy-sdk-php/zipball/1c37a03b1548cc581e82d7e6e060aff28e475358",
+            "reference": "1c37a03b1548cc581e82d7e6e060aff28e475358",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6",
+            "psr/log": "^1.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.10",
+            "monolog/monolog": "^1.24",
+            "symfony/phpunit-bridge": "^4.1",
+            "symfony/process": "^3.4"
+        },
+        "time": "2019-03-15T10:12:46+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "RedirectionIO\\Client\\Sdk\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Grégoire Pineau",
+                "email": "lyrixx@lyrixx.info"
+            },
+            {
+                "name": "Quentin Brunet",
+                "email": "hello@quentinbrunet.com"
+            },
+            {
+                "name": "redirection.io",
+                "email": "support@redirection.io"
+            }
+        ],
+        "description": "PHP common code for redirection.io proxy"
+    }
+]

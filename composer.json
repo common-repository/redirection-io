@@ -1,0 +1,53 @@
+{
+    "name": "redirectionio/proxy-wordpress",
+    "description": "RedirectionIO Proxy for WordPress",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grégoire Pineau",
+            "email": "lyrixx@lyrixx.info"
+        },
+        {
+            "name": "Quentin Brunet",
+            "email": "hello@quentinbrunet.com"
+        },
+        {
+            "name": "redirection.io",
+            "email": "support@redirection.io"
+        }
+    ],
+    "archive": {
+        "exclude": [
+            "!vendor/*",
+            ".*",
+            "!.gitignore"
+        ]
+    },
+    "require": {
+        "redirectionio/proxy-sdk": "^0.3.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.10",
+        "symfony/phpunit-bridge": "^4.1",
+        "symfony/process": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "RedirectionIO\\Client\\Wordpress\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "vendor/bin/simple-phpunit",
+        "cs-fix": "vendor/bin/php-cs-fixer fix --config=.php_cs --dry-run --diff",
+        "code-coverage": "vendor/bin/simple-phpunit --coverage-text --coverage-clover=coverage/coverage.xml --coverage-html=coverage/html"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.x-dev"
+        }
+    }
+}
